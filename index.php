@@ -26,8 +26,17 @@ include ('data.php');
 <body>
   <!-- header section strats -->
   <?php
-    setheader ($navbar1);
-  ?>
+session_start(); // Ensure session is started to access session data
+
+// Check if the user is logged in
+// Render the correct navbar based on the login status
+if ($logged_in) {
+    setheader($navbar2); // User is logged in, show navbar2
+} else {
+    setheader($navbar1); // User is not logged in, show navbar1
+}
+?>
+
   <!-- end header section -->
 
   <!-- section1 -->

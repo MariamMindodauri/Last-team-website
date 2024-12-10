@@ -69,12 +69,12 @@ function h2WithSpan($text, $spanText, $spanClass = '', $h2Class = '') {
 }
 
 // HEADER FUNCTION
-function setheader($navbar1) {
+function setheader($navbar) {
     echo '<div class="hero_area">';
     echo '<header class="header_section">';
     echo '<div class="container-fluid">';
     echo '<nav class="navbar navbar-expand-lg custom_nav-container">';
-    echo '<a class="logo" href="' . $navbar1[0]['link'] . '">';
+    echo '<a class="logo" href="' . $navbar[0]['link'] . '">';
     img('images/logo.png', 'Site logo');
     echo '</a>';
     echo '<span class=""></span>';
@@ -82,19 +82,21 @@ function setheader($navbar1) {
     echo '<div class="collapse navbar-collapse" id="navbarSupportedContent">';
     echo '<ul class="navbar-nav">';
 
-    foreach ($navbar1 as $navbar) {
-        if ($navbar['name'] == 'logo') {
-            continue;
+    // Loop through the navbar items
+    foreach ($navbar as $navbar_item) {
+        if ($navbar_item['name'] == 'logo') {
+            continue; // Skip the logo item, as it's not a link
         }
 
         echo '<li class="nav-item dropdown">';
-        a($navbar['name'], $navbar['link'], 'nav-link');
-        
-        if (isset($navbar['submenu'])) {
+        a($navbar_item['name'], $navbar_item['link'], 'nav-link');
+
+        // Render submenu if it exists
+        if (isset($navbar_item['submenu'])) {
             echo '<ul class="submenu">';
-            foreach ($navbar['submenu'] as $submenu) {
+            foreach ($navbar_item['submenu'] as $submenu_item) {
                 echo '<li class="submenu-item">';
-                a($submenu['name'], $submenu['link'], 'submenu-link');
+                a($submenu_item['name'], $submenu_item['link'], 'submenu-link');
                 echo '</li>';
             }
             echo '</ul>';
@@ -110,6 +112,8 @@ function setheader($navbar1) {
     echo '</header>';
     echo '</div>';
 }
+
+
 
 // Section 1
 function section1() {
@@ -171,7 +175,6 @@ function renderProduct($product) {
     echo '<p>' . $product['description'] . '</p>';
     echo '<div class="see-more">';
     echo '<span>see more <i class="bx bx-right-arrow-alt"></i></span>';
-    // echo '<img src="images/arrow.png" alt="Arrow Icon">';
     echo '</div>';
     echo '</div>';
     echo '</div>';
@@ -277,7 +280,7 @@ function setFooter() {
     echo '<div class="footer-nav">';
     echo '<a href="about.php">ABOUT US</a>';
     echo '<a href="ship-info.php">SHIPPING INFO</a>';
-    echo '<a href="login.php">JOIN US</a>';
+    echo '<a href="signup.php">JOIN US</a>';
     echo '</div>';
     echo '<div class="footer-icons">';
     echo '<a href="https://www.instagram.com"><img src="images/insta-icon.png" alt=""></a>';
