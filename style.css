@@ -130,15 +130,17 @@ ul {
     }
 }
 
+
 /* Section 1 */
 .section1 {
     font-family: 'Hepta Slab';
     font-size: 28px;
     position: relative; 
-    width: 100%;
+    width: 90%;
     height: 100vh;
     overflow: hidden;
-    margin-top: 70px;
+    margin-top: 110px;
+    margin-left: 100px;
 }
 
 .section1-background {
@@ -157,7 +159,7 @@ ul {
 
 .section1-content {
     position: absolute;
-    top: 45%;
+    top: 37%;
     left: 35%;
     transform: translate(-50%, -50%);
     text-align: left;
@@ -167,7 +169,7 @@ ul {
 
 .section-title, .section-description {
     font-family: 'Elsie Swash Caps', sans-serif;
-    font-size: 72px;
+    font-size: 68px;
     margin: 10px 0;
     text-transform: uppercase;
     background-image: linear-gradient(to right, #C3B3B9, #715D64); 
@@ -178,8 +180,8 @@ ul {
 
 .section-description {
     font-family: 'Elsie Swash Caps', sans-serif;
-    font-size: 44px;
-    margin: -20px 0 20px 600px;
+    font-size: 40px;
+    margin: -20px 0 10px 500px;
     background-image: linear-gradient(to right, #715D64, #676177); 
     -webkit-background-clip: text; 
     background-clip: text;
@@ -188,14 +190,14 @@ ul {
 
 .section-description-2 {
     font-family: 'Hepta Slab';
-    margin-top: 20px;
+    margin-top: 0;
     line-height: 1.7;
 }
 
 /* Section 2 */
 .section2 {
     position: relative; 
-    margin-top: -20px; 
+    margin-top: -190px; 
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -439,6 +441,7 @@ ul {
 
 /* Section 3 and Section 4 */
 .section3-title {
+    margin-top: -50px;
     display: flex;
     justify-content: center;
     font-family: 'Hepta Slab', serif;
@@ -454,7 +457,7 @@ ul {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 
@@ -550,10 +553,15 @@ ul {
 
 .footer {
     background-color: rgb(255, 255, 255);
-    border: 2px solid #809E83;
+    border-top: 2px solid #809E83; /* Top border with color */
+    border-left: 2px solid #809E83; /* Left border with color */
+    border-right: 2px solid #809E83; /* Right border with color */
+    border-bottom: none; /* No bottom border */
     border-radius: 40px 40px 0 0;
     height: 405px;
-}
+    margin-top: 100px;
+  }
+  
 
 .footer-up{
    margin: 80px 0 ;

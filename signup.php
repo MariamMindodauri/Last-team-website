@@ -48,27 +48,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             background-color: #FFFFFF; 
         }
         .container {
-            background-color: white; 
-            border: 2px solid #D39B9B; 
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-            padding: 20px; 
-            width: 700px; 
-            height: 700px;
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            justify-content: center; 
-            text-align: center; 
-            box-sizing: border-box; 
+        background-color: white; 
+        border: 2px solid #D39B9B; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+        padding: 20px; 
+        width: 700px; 
+        height: 700px;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        text-align: center; 
+        box-sizing: border-box; 
 
-            /* Octagon shape using clip-path */
-            clip-path: polygon(
-                30% 0%, 70% 0%, 
-                100% 30%, 100% 70%, 
-                70% 100%, 30% 100%, 
-                0% 70%, 0% 30%
-            );
-        }
+        /* Octagon shape using clip-path */
+        clip-path: polygon(
+            30% 0%, 70% 0%, 
+            100% 30%, 100% 70%, 
+            70% 100%, 30% 100%, 
+            0% 70%, 0% 30%
+        );
+    }
 
 
         h2 { 

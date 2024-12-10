@@ -37,5 +37,11 @@ include('data.php');
     </div>
 </section>
 
+    <!-- footer -->
+    <?php 
+      setFooter();
+    ?>
+  <!-- end  footer -->
+  
 </body>
 </html>
