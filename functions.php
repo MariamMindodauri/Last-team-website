@@ -275,14 +275,14 @@ function setFooter() {
     echo '<a href="#"><img src="images/logo.png" alt=""></a>';
     echo '</div>';
     echo '<div class="footer-nav">';
-    echo '<a href="#">ABOUT US</a>';
-    echo '<a href="#">SHIPPING INFO</a>';
-    echo '<a href="#">JOIN US</a>';
+    echo '<a href="about.php">ABOUT US</a>';
+    echo '<a href="ship-info.php">SHIPPING INFO</a>';
+    echo '<a href="login.php">JOIN US</a>';
     echo '</div>';
     echo '<div class="footer-icons">';
-    echo '<a href="#"><img src="images/insta-icon.png" alt=""></a>';
-    echo '<a href="#"><img src="images/tiktok-icon.png" alt=""></a>';
-    echo '<a href="#"><img src="images/facebook-icon.png" alt=""></a>';
+    echo '<a href="https://www.instagram.com"><img src="images/insta-icon.png" alt=""></a>';
+    echo '<a href="https://www.tiktok.com"><img src="images/tiktok-icon.png" alt=""></a>';
+    echo '<a href="https://www.facebook.com"><img src="images/facebook-icon.png" alt=""></a>';
     echo '</div>';
     echo '</div>';
         echo '<div class="footer-description">';
@@ -294,4 +294,3 @@ function setFooter() {
     echo '</footer>';
 }
 ?>
-
