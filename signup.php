@@ -48,29 +48,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             background-color: #FFFFFF; 
         }
         .container {
-        background-color: white; 
-        border: 2px solid #D39B9B; 
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-        padding: 20px; 
-        width: 700px; 
-        height: 700px;
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
-        text-align: center; 
-        box-sizing: border-box; 
-
-        /* Octagon shape using clip-path */
-        clip-path: polygon(
-            30% 0%, 70% 0%, 
-            100% 30%, 100% 70%, 
-            70% 100%, 30% 100%, 
-            0% 70%, 0% 30%
-        );
-    }
-
-
+            background-color: white; 
+            border: 2px solid #D39B9B; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+            padding: 20px; 
+            width: 700px; 
+            height: 700px;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            text-align: center; 
+            box-sizing: border-box; 
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        }
         h2 { 
             color: #D39B9B; 
             text-align: center; 
@@ -114,7 +105,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <form method="POST">
             <input type="text" name="first_name" placeholder="First Name" required>
             <input type="text" name="last_name" placeholder="Last Name" required>
-            <input type="email" name="gmail" placeholder="Gmail" required>
+            <input type="gmail" name="gmail" placeholder="Gmail" required>
             <input type="password" name="password" placeholder="Password" required>
             <input type="number" name="age" placeholder="Age" required>
             <select name="gender" required>
